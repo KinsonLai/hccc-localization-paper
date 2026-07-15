@@ -11,6 +11,11 @@
 
 \sloppy
 
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.70}
+\renewcommand{\textfraction}{0.10}
+\renewcommand{\floatpagefraction}{0.75}
+
 \ExplSyntaxOn
 \RenewDocumentCommand \ResetMarks { } {
   \keys_set:nn { ceur / author } {
@@ -43,7 +48,7 @@
 
 \author{LAI$^1$, Chun Kit}[%
   email=cklaiaq@connect.ust.hk,
-  url=https://github.com/KinsonLai/hccc-localization,
+  url=https://github.com/KinsonLai/hccc-localization-paper,
 ]
 \address[1]{Department of Computer Science and Engineering,
   The Hong Kong University of Science and Technology,
@@ -283,7 +288,7 @@ Flat coop. & 0.99 & 0.51 & 0.35 \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{fig_runtime.pdf}
 \caption{Per-node runtime vs.\ $N$ (log--log): HCCC slope $\approx1.4$
@@ -368,7 +373,7 @@ PDR-only & 4.97 & 0\% \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{fig_ablation.pdf}
 \caption{Ablation: median error (top) and payload compression (bottom). Hierarchy is
@@ -414,7 +419,7 @@ huayi\_handheld1 & 14.1 & 13.6 & $+4\%$ \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{fig_ridi_cdf.pdf}
 \caption{RIDI per-sample error CDF: HCCC cooperative (green) dominates solo PDR (red)
@@ -468,7 +473,7 @@ open problems we plan to address next.
 The author thanks the RIDI authors (Yan~et~al.) for the public dataset, and the HKUST
 Department of Computer Science and Engineering for research support. The simulator and
 this paper are released openly at
-\url{https://github.com/KinsonLai/hccc-localization}.
+\url{https://github.com/KinsonLai/hccc-localization-paper}.
 \end{acknowledgments}
 
 \section*{Declaration on Generative AI}
