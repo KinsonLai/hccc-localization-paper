@@ -1,0 +1,161 @@
+{
+  "config": {
+    "seed": 20260614,
+    "area": 60.0,
+    "n_anchors": 4,
+    "sigma0": 4.2,
+    "sigma_r": 0.4,
+    "gamma": 0.82,
+    "K": 6,
+    "cycle_size": 4,
+    "group_size": 10,
+    "close_gain": 0.5,
+    "w_group": 0.6,
+    "consensus_iters": 10,
+    "r_min": 1.5,
+    "r_max": 15.0,
+    "h_max": 14,
+    "T_window": 2.0,
+    "delta": 0.2,
+    "trials": 40,
+    "densities": {
+      "low": 40,
+      "med": 120,
+      "high": 300
+    },
+    "n_scaling": [
+      20,
+      50,
+      100,
+      200,
+      350,
+      500
+    ]
+  },
+  "accuracy_vs_density": {
+    "low": {
+      "standalone": 4.928,
+      "fixed_radius": 2.502,
+      "flat": 0.986,
+      "hccc": 2.908
+    },
+    "med": {
+      "standalone": 4.965,
+      "fixed_radius": 3.384,
+      "flat": 0.508,
+      "hccc": 3.493
+    },
+    "high": {
+      "standalone": 4.995,
+      "fixed_radius": 3.54,
+      "flat": 0.349,
+      "hccc": 3.529
+    }
+  },
+  "scalability": [
+    {
+      "N": 20,
+      "hccc_ms": 0.9571,
+      "hccc_ops": 84,
+      "flat_ops": 48000,
+      "flat_model_ms": 1.8614
+    },
+    {
+      "N": 50,
+      "hccc_ms": 3.0885,
+      "hccc_ops": 188,
+      "flat_ops": 750000,
+      "flat_model_ms": 29.0847
+    },
+    {
+      "N": 100,
+      "hccc_ms": 5.9355,
+      "hccc_ops": 387,
+      "flat_ops": 6000000,
+      "flat_model_ms": 232.6775
+    },
+    {
+      "N": 200,
+      "hccc_ms": 16.6859,
+      "hccc_ops": 766,
+      "flat_ops": 48000000,
+      "flat_model_ms": 1861.42
+    },
+    {
+      "N": 350,
+      "hccc_ms": 43.4846,
+      "hccc_ops": 1340,
+      "flat_ops": 257250000,
+      "flat_model_ms": 9976.0478
+    },
+    {
+      "N": 500,
+      "hccc_ms": 83.5598,
+      "hccc_ops": 1893,
+      "flat_ops": 750000000,
+      "flat_model_ms": 29084.6875
+    }
+  ],
+  "overhead": {
+    "N": 300,
+    "n_groups": 34,
+    "raw_scalars": 600,
+    "hccc_scalars": 102,
+    "payload_compression": 0.83,
+    "wake_up_reduction_x": 10.0
+  },
+  "churn": {
+    "churn": 0.3,
+    "baseline_median_m": 3.487,
+    "churn_median_m": 3.599,
+    "degradation_pct": 3.2
+  },
+  "ablation": {
+    "tier": "med",
+    "n": 120,
+    "variants": [
+      {
+        "variant": "Full HCCC",
+        "median_error_m": 3.517,
+        "runtime_ms": 7.841,
+        "payload_compression": 0.825,
+        "n_groups": 14
+      },
+      {
+        "variant": "-Dynamic Radius",
+        "median_error_m": 3.401,
+        "runtime_ms": 10.199,
+        "payload_compression": 0.825,
+        "n_groups": 14
+      },
+      {
+        "variant": "-Hierarchy",
+        "median_error_m": 3.475,
+        "runtime_ms": 8.018,
+        "payload_compression": 0.0,
+        "n_groups": 12
+      },
+      {
+        "variant": "-DFS Routing",
+        "median_error_m": 3.323,
+        "runtime_ms": 7.597,
+        "payload_compression": 0.85,
+        "n_groups": 12
+      },
+      {
+        "variant": "-Cycle Consensus",
+        "median_error_m": 3.493,
+        "runtime_ms": 5.605,
+        "payload_compression": 0.85,
+        "n_groups": 12
+      },
+      {
+        "variant": "PDR Only",
+        "median_error_m": 4.97,
+        "runtime_ms": 0.0,
+        "payload_compression": 0.0,
+        "n_groups": 0
+      }
+    ]
+  }
+}

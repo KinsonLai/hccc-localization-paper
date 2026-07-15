@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+authors:
+  - family-names: "Lai"
+    given-names: "Chun Kit"
+    email: "cklaiaq@connect.ust.hk"
+    affiliation: "The Hong Kong University of Science and Technology (HKUST)"
+title: "Hierarchical Closed-Loop Cooperative Localization (HCCC): A Resource-Constrained, Cross-Layer Design for Best-Achievable-Accuracy Indoor Positioning on Commodity Smartphones"
+year: 2026
+url: "https://github.com/KinsonLai/hccc-localization-paper"
+repository-code: "https://github.com/KinsonLai/hccc-localization-paper"
+license: MIT
+keywords:
+  - indoor localization
+  - cooperative localization
+  - pedestrian dead reckoning
+  - resource-constrained
+  - consensus
+  - mobile crowdsensing
