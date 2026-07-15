@@ -3,8 +3,10 @@
 **A resource-constrained, cross-layer design for best-achievable-accuracy indoor positioning on commodity smartphones.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Paper](https://img.shields.io/badge/Paper-IPIN%202026%20WCAL-blue)](HCCC_WCAL2026.pdf)
+[![Under Review](https://img.shields.io/badge/Under%20Review-IPIN%202026%20WCAL-orange)](HCCC_WCAL2026.pdf)
 [![Build](https://img.shields.io/badge/Build-LaTeX-5663af.svg)](main_wcal.tex)
+
+**Status:** Submitted to / under review at IPIN 2026 WCAL (Work-in-Progress workshop). Not yet accepted; CEUR-WS publication follows acceptance.
 
 ---
 
@@ -56,7 +58,7 @@ communication-heavy cooperation at a fraction of the per-device cost.*
 
 ```
 hccc-localization-paper/
-├── main_wcal.tex          # WCAL 2026 workshop paper (CEUR-WS format)
+├── main_wcal.tex          # WCAL 2026 workshop submission (CEUR-WS format)
 ├── ceurart.cls            # CEUR-WS document class
 ├── references.bib         # Bibliography
 ├── fig_*.pdf / fig_*.svg  # Figures
@@ -87,17 +89,17 @@ python validate_real.py   # validate against real traces
 ## Citation
 
 ```bibtex
-@inproceedings{lai2026hccc,
+@misc{lai2026hccc,
   title     = {Hierarchical Closed-Loop Cooperative Localization (HCCC):
                A Resource-Constrained, Cross-Layer Design for
                Best-Achievable-Accuracy Indoor Positioning on Commodity Smartphones},
   author    = {Lai, Chun Kit},
-  booktitle = {IPIN 2026 Workshop on Computing \& Advanced Localization (WCAL)},
-  year      = {2026}
+  year      = {2026},
+  note      = {Submitted to IPIN 2026 WCAL (Work-in-Progress)}
 }
 ```
 
 ## License
 
 Code and content in this repository are released under the [MIT License](LICENSE).
-The published paper is distributed under CC BY 4.0 by CEUR-WS.
+The paper, upon acceptance, will be distributed under CC BY 4.0 by CEUR-WS.
