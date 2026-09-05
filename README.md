@@ -6,8 +6,7 @@
 [![Under Review](https://img.shields.io/badge/Under%20Review-IPIN%202026%20WCAL-orange)](HCCC_WCAL2026.pdf)
 [![Build](https://img.shields.io/badge/Build-LaTeX-5663af.svg)](main_wcal.tex)
 
-**Status:** Submitted to / under review at IPIN 2026 WCAL (Work-in-Progress workshop). 
-**Update:** Got accepted; CEUR-WS publication follows acceptance.
+**Status:** Got Accepted to IPIN 2026 WCAL (Work-in-Progress workshop). 
 
 ---
 
