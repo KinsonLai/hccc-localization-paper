@@ -6,7 +6,7 @@
 [![Under Review](https://img.shields.io/badge/Under%20Review-IPIN%202026%20WCAL-orange)](HCCC_WCAL2026.pdf)
 [![Build](https://img.shields.io/badge/Build-LaTeX-5663af.svg)](main_wcal.tex)
 
-**Status:** Got Accepted to IPIN 2026 WCAL (Work-in-Progress workshop). 
+**Status:** Accepted to IPIN 2026 WCAL (Work-in-Progress workshop). 
 
 ---
 
@@ -95,7 +95,7 @@ python validate_real.py   # validate against real traces
                Best-Achievable-Accuracy Indoor Positioning on Commodity Smartphones},
   author    = {Lai, Chun Kit},
   year      = {2026},
-  note      = {Submitted to IPIN 2026 WCAL (Work-in-Progress)}
+  note      = {Accepted to IPIN 2026 WCAL (Work-in-Progress)}
 }
 ```
 
